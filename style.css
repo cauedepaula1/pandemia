@@ -1,0 +1,87 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+#imgHome{
+    width: 50%;
+    height: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: row;
+    position: relative;
+}
+p{
+    width: 100%;
+    color: white;
+    font-size: 300%;
+    text-align: center;
+    margin-top: 37%;
+    position: absolute;
+
+    
+    z-index: 100% ;
+}
+h1{
+    color: #f9f9e7;
+    width: 100%;
+    font-size: 500%;
+    text-align: center;
+    margin-top: 30%;
+    position: absolute;
+    z-index: 100% ;
+}
+
+#Home{
+    /*#c1e0e0 azul
+    #f9f9e7 amerelinh*/
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+#fraseHome{
+    width: 100%;
+    color: white;
+    font-size:  10px;;
+    text-align: center;
+    margin-top: 0%;
+    position: absolute;
+    z-index: 100% ;
+}
+#nav{
+    position: relative;
+    height:50px;
+    margin-top: 23px;
+    padding-left: 50px;
+    background-color: rgba(0, 0, 0, 0.153);
+    
+
+}
+#botao{
+    background-color: black;
+    color: antiquewhite;
+    border-width: 2px;
+    border-style: inset;
+    padding: 4px;
+    width: 100px;
+    
+}
+
+input{
+    border-color: white;
+    height: 50px;
+    border-radius: 10px;
+    border-bottom: 10px;
+}
+#apresentacaoProjeto{
+    display: flex;
+    margin-top: -120px;
+    width: 100%;
+    position: relative;
+    background-color: bisque;
+    color: antiquewhite;
+}
+
+
