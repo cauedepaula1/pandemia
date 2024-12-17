@@ -12,8 +12,6 @@ html, body{
 }
 #imgHome{
     width: 50%;
-    height: 100%;
-    
     display: flex;
     flex-direction: row;
     align-items: row;
@@ -24,8 +22,8 @@ p{
     color: white;
     font-size: 40px;
     font-family: "Roboto Mono", monospace;
-    position: absolute;
-    margin-top: 40%;
+    
+    margin-top: 38%;
     position: relative;
     z-index: 100% ;
 }
@@ -33,7 +31,7 @@ h1{
     font-family: "Roboto", sans-serif;
     color: #f9f9e7;
     width: 100%;
-    font-size: 50px;
+    font-size: 63px;
     text-align: center;
     margin-top: 32%;
     position: absolute;
@@ -50,9 +48,8 @@ h1{
 #fraseHome{
     width: 100%;
     color: white;
-    font-size:  10px;;
     text-align: center;
-    margin-top: 0%;
+   
     position: absolute;
     z-index: 100% ;
 }
@@ -82,17 +79,16 @@ input{
     border-bottom: 10px;
 }
 
-
-
 #vo2{
     width: 70%; /*mao alcool em gel */
 }
 #segundafoto{
     position: relative;
     padding-top: 50%;
-    margin-right: 30%;
-    margin-left: 20%;
+    width: 63%;
+    margin-left: 20px;
     color: antiquewhite;
+   
 }
 
 #img3{
@@ -144,12 +140,13 @@ input{
     color: white;
 }
 #maeprincipal{
-    width: 35%;
-    height: 40%;
+    width: 44%;
+    height: 0%;
     margin-right: 10%;
     /* margem imagem peb*/
 }
 #oito{
+    font-family: "Roboto Mono", monospace;
     font-size: 30px;
     display: flex;
     margin-left: 5%; /*margin do paragrf*/
@@ -172,18 +169,19 @@ input{
 }
 #vo1{
     margin-left: 25%;
+    margin-bottom: 20px;
     width: 70%;  
 
 }
 #apresentacaoProjeto{
+    padding-bottom: 3%;
     position: relative;
-    background-image: linear-gradient(to bottom, #c1e0e0 0, #c1e0e0 70% ,  rgba(0, 0, 0, 0.153) 30%);
+    background-image: linear-gradient(to bottom, #c1e0e0 0, #c1e0e0 55% ,  rgba(0, 0, 0, 0.153) 45%); /*inverter porcentagem para igualar com o outro*/
 }
 #paragrafogrid{
     font-family: "Roboto Mono", monospace;
     color: black;
     font-size: 30px;
-    margin-top: 25px;
-    margin-left: 0%;
-    margin-bottom: 10px; /*paragrafo das mascara e etc*/
+    margin-top: 5px;
+    margin-bottom: 3px; /*paragrafo das mascara e etc*/
 }
