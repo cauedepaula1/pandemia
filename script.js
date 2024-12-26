@@ -1,6 +1,16 @@
+var a = window.document.getElementById("apresentacaoProjeto")
+a.addEventListener("mouseenter", entrar)
+
+function entrar(){
+
+
 var res = window.document.getElementById("titulo2");
 var text = "Quanto afeto cabe em uma janela?";
-var interval = 120;
+var interval = 70;
+
+if (res.getAttribute("data-written") == "true") {
+    return; // Sai da função se já tiver sido escrito
+}
 
 // Função para digitar o texto
 function historia(element, text, interval) {
@@ -8,7 +18,9 @@ function historia(element, text, interval) {
 
     var typer = setInterval(function () {
         if (!char.length) { // Corrigido: char.length
+            element.setAttribute("data-written", "true"); // Marca como escrito
             return clearInterval(typer);
+            
         }
         var next = char.pop();
 
@@ -16,14 +28,19 @@ function historia(element, text, interval) {
     }, interval);
 }
 
+    historia(res, text, interval);
+
+}
+
+
 // Aguarda o carregamento da página
-window.addEventListener("scroll", function () {
+/*window.addEventListener("scroll", function () {
     if (res && !res.classList.contains("typed")) { 
         res.classList.add("typed"); // Adiciona uma classe para evitar múltiplas execuções
         historia(res, text, interval);
     }
 });
-
+}*/
 //load !important
 // setTimeout
 var res2 = window.document.querySelector(".texto")
@@ -33,7 +50,6 @@ var interval2 = 130;
 //para digitar o texto
 function digito1(element2, text2, interval2){
     var char = text2.split("").reverse();
-
     var typer = setInterval(function (){
         if(!char.length){
             return clearInterval(typer);
@@ -47,7 +63,7 @@ window.addEventListener("load", function () {
 });
 var res3 = window.document.getElementById("paragrafogrid")
 var text3 = "Diferentes formas de cuidar";
-var interval3 = 430;
+var interval3 = 130;
 
 function digito3(element3, text3, interval3){
     var char = text3.split("").reverse();
