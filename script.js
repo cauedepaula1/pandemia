@@ -1,8 +1,7 @@
 let disparo = window.document.getElementById("apresentacaoProjeto")
-let alreadyTriggered = false;
-disparo.addEventListener("mouseenter", () => {
-    if (alreadyTriggered) return;
-
+let alreadyTriggered = false; //variavel definindo que inicia sem a escrita
+disparo.addEventListener("mouseenter", () => { //usar a seta e o paramentro vazio fez com que nao fosse necessario a funcao antiga de digito
+    if (alreadyTriggered) return; //quando ja estiver escrito vau retornar 0/ faz com que o evento ocorra só uma vez
 
 let res = window.document.getElementById("titulo2");
 let text = "Quanto afeto cabe em uma janela?";
@@ -58,31 +57,32 @@ window.addEventListener("load", function () {
 });
 
 let disparo2 = window.document.querySelector(".estilogrid")
-disparo2.addEventListener("mouseenter", entrou)
+let alreadyTriggered2 = false; //programa inicia sem a frase
+disparo2.addEventListener("mouseenter", () => {
+    if (alreadyTriggered2) return; //quando a frase for escrita ira parar, retornando 0
 
-function entrou(){
-let res3 = window.document.getElementById("paragrafogrid")
-let text3 = "Diferentes formas de cuidar";
+let res3 = window.document.getElementById("paragrafogrid");
+let text3 = "Diferentes formas de cuidar e ser cuidado";
 let interval3 = 60;
 
-
-if (res3.getAttribute("data-written") == "true") {
-    return; // se for verdade que ja foi escrito, o retorno Sai da função, retornando 0(nada)/acaba
+if(res3.getAttribute("data-written") == "true"){
+    return; //aqui saimos da funcao, garantindo que a frase seja escrita só uma vez
 }
 
 function digito3(element3, text3, interval3){
-    let char = text3.split("").reverse();
-    let typer = setInterval(function (){
-        if(!char.length){
+    let char2 = text3.split("").reverse();
+    let typer2 = setInterval(function (){
+        if(!char2.length){
             element3.setAttribute("data-written", "true"); // Marca como escrito
-            return clearInterval(typer);
+            return clearInterval(typer2);
         }
-        let next = char.pop();
+        let next = char2.pop();
         element3.innerHTML += next;
     }, interval3);
 }
-    digito3(res3, text3, interval3) //chama variaveis
-};
+    digito3(res3, text3, interval3) //chama variaveis para imprimir
+    alreadyTriggered2 = true; //aqui informa que foi escrito/impresso
+});
 
 
 
