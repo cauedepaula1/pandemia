@@ -99,23 +99,10 @@ let interval4 = 150;
         }, interval4)
     }
         window.addEventListener("load", function showSubmit(){
-            setTimeout( function(){
+            setTimeout( function(){ //defini ointervalo
                 digitoRasta(res4, digitoNome, interval4)
     }, 2008);
     });
-/* function digitoRasta(element4,digitoNome, interval4){
-    let char4 = digitoNome.split("").reverse();
-    let typer = setInterval(function (){
-        if(!char4.length){
-            return clearInterval(typer);
-        }
-        let next2 = char4.pop();
-        element4.innerHTML += next2;
-    }, interval4)
-}
-    window.addEventListener("load", function(){
-    digitoRasta(res4, digitoNome, interval4)
-});
-*/
+
 
 
