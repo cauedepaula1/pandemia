@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Patua+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
@@ -22,10 +23,8 @@ p{
     width: 100%;
     height: 40%;
     color: #84B295;
-   
     font-size: 33px;
     font-family: "Bree Serif", serif;
-   
     font-style: normal;
     margin-top: 36%;
     position: relative;
@@ -65,8 +64,7 @@ h1{
     position: relative;
     padding-top: 2px;
     height:50px;
-    margin-top: 0%;
-    padding-left: 35px;
+    
     background-color:#84B295 ;
     
 
@@ -95,7 +93,7 @@ input{
     position: relative;
     
     width: 63%;
-    margin-left: 20px;
+    margin-left: 7%;
     color: antiquewhite;
    
 }
@@ -122,8 +120,8 @@ input{
     margin-top: 10px; /*parte azul cima comeco*/
     width: 100%;
     position: relative;
-    background-color: #BB8138;
-    background-image: linear-gradient(to bottom,#BB8138 0, #BB8138 50% , black 30%);
+    background-color:#84B295;
+    background-image: linear-gradient(to bottom,#84B295 0, #84B295 50% , black 30%);
 }
 #segundaApresentacao{
     background-color: black;
@@ -146,7 +144,6 @@ input{
     width: 100%;
     display: flex;
     align-items: flex-start;
-    
     background-color: #f9f9e7;
 }
 #maeprincipal{
@@ -190,12 +187,12 @@ input{
     background-color: #84B295;
     background-image: linear-gradient(to bottom,  #84B295 0, #84B295 55% ,  black 45%); /*inverter porcentagem para igualar com o outro*/
 }
-#paragrafogrid{
-    
+h2#paragrafogrid{
     color: black;
     font-size: 30px;
     margin-top: 5px;
-    
+    margin-left: -5%; 
+    width: 100%;
     margin-bottom: 3px; /*paragrafo das mascara e etc*/
 }
 #logo{
@@ -203,6 +200,10 @@ input{
     margin-top: 5px;
     color: black;
     font-size: 25px;
+    display: flex;
+    align-items: center; /* Rasta fotos ta centralizado com o logo*/
+    
+    
 }
 @media screen and (max-width: 560px){
     h1{
@@ -212,4 +213,24 @@ input{
         font-size: 29px;
         margin-top: 38%;
     }
+}
+ul{
+    list-style-type: none;
+    padding-top: 10px;
+    display: flex;
+    margin-right: 4%;
+    margin-left: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#botao{
+    border-radius: 15px;
+    border-color: black;
+    font-family: "Bree Serif", serif;
+    color: black;
+    background-color: #f9f9e7;
+    font-size: 16px;
+    text-align: center;
+
+    padding: 5px 5px 5px 5px;
 }
