@@ -103,6 +103,11 @@ let interval4 = 150;
                 digitoRasta(res4, digitoNome, interval4)
     }, 2008);
     });
-
+let disparo8 = window.document.getElementById("")
+let alreadyTriggered3 = false;
+disparo8.addEventListener("mousenter", () => {
+    if (alreadyTriggered3) return;
+    
+}) 
 
 
