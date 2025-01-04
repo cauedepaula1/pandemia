@@ -131,6 +131,32 @@ function digito4(element8, digitomomento, interval8 ){
     alreadyTriggered8 = true;
 });
 
+let disparo9 = window.document.getElementById("ultimasecao")
+let alreadyTriggered9 = false;
+disparo9.addEventListener("mouseenter", () =>{
+    if(alreadyTriggered9) return;
+
+    let res9 = window.document.getElementById("mundo")
+    let ultimodigito = "O mundo sob os impactos da pandemia"
+    let interval9 = 95;
+
+    if(res9.getAttribute("data-written") == "true"){
+        return;
+    }
+function digito5(element9, ultimodigito, interval9){
+    let char9 = ultimodigito.split("").reverse();
+    let typer9 = setInterval(function (){
+        if(!char9.length){
+            element9.setAttribute("data-written9", "true");
+            return clearInterval(typer9)
+        }
+        let next9 = char9.pop();
+        element9.innerHTML += next9;
+    }, interval9);
+}
+    digito5(res9, ultimodigito, interval9)
+    alreadyTriggered9 = true;
+});
 
 
 

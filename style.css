@@ -208,10 +208,15 @@ h2#paragrafogrid{
     
     
 }
-.secao6{
+#secao6{
     display: flex;
     align-items: flex-end;
     background-color: #D1D1D1;
+}
+#ultimasecao{
+    display: flex;
+    align-items: flex-end;
+    background-color: #D1D1D1; 
 }
 @media screen and (max-width: 560px){
     h1{
@@ -254,7 +259,6 @@ ul{
     margin-bottom: -19px;
 }
 #mundo{
-    width: 100%;
     font-size: 32px;
     font-weight: 700;
     margin-left: 2%;
