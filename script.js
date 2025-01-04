@@ -103,11 +103,35 @@ let interval4 = 150;
                 digitoRasta(res4, digitoNome, interval4)
     }, 2008);
     });
-let disparo8 = window.document.getElementById("")
-let alreadyTriggered3 = false;
-disparo8.addEventListener("mousenter", () => {
-    if (alreadyTriggered3) return;
-    
-}) 
+
+let disparo8 = window.document.getElementById("terceiraParte")
+let alreadyTriggered8 = false;
+disparo8.addEventListener("mouseenter", () =>{
+    if(alreadyTriggered8) return;
+
+    let res8 = window.document.getElementById("oito")
+    let digitomomento = "Vivendo em um período de incertezas";
+    let interval8 = 80;
+
+    if(res8.getAttribute("data-written") == "true"){
+        return;
+    }
+function digito4(element8, digitomomento, interval8 ){
+    let char8 = digitomomento.split("").reverse();
+    let typer8 = setInterval(function (){
+        if(!char8.length){
+            element8.setAttribute("data-written", "true");
+            return clearInterval(typer8)
+        }
+        let next8 = char8.pop();
+        element8.innerHTML += next8;
+    }, interval8);
+}
+    digito4(res8, digitomomento, interval8)
+    alreadyTriggered8 = true;
+});
+
+
+
 
 
