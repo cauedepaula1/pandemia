@@ -1,3 +1,4 @@
+window.alert("Celular: clique nas imagens para ler as legendas! *exceto a segunda imagem")
 let disparo = window.document.getElementById("apresentacaoProjeto")
 let alreadyTriggered = false; //variavel definindo que inicia sem a escrita
 disparo.addEventListener("mouseenter", () => { //usar a seta e o paramentro vazio fez com que nao fosse necessario a funcao antiga de digito

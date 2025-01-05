@@ -225,13 +225,13 @@ h2#paragrafogrid{
     #oito{
         margin-top: 10px;
     }
-    .nome{
-        font-size: 13px;
-        margin-top: 38%;
+    #nome{
+        font-size: 20px;
+        margin-top: 40%;
     }
     #mundo{
 
-        margin-top: 30px;
+        margin-bottom: 70px;
     }
 }
 ul{
