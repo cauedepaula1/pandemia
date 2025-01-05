@@ -220,11 +220,18 @@ h2#paragrafogrid{
 }
 @media screen and (max-width: 560px){
     h1{
-        font-size: 46px;
+        font-size: 36px;
+    }
+    #oito{
+        margin-top: 10px;
     }
     .nome{
-        font-size: 29px;
+        font-size: 13px;
         margin-top: 38%;
+    }
+    #mundo{
+
+        margin-top: 30px;
     }
 }
 ul{
